@@ -56,21 +56,6 @@ Esto iniciará:
 La aplicación de CV estará disponible en:
 `http://localhost:3000`
 
-### Recargar la base de datos
-
-Para borrar los datos anteriores y recargar desde `db/init.sql`:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File reload-db.ps1
-```
-
-O manualmente:
-
-```bash
-docker compose down -v
-docker compose up -d
-```
-
 ## Uso local sin Docker
 
 ### Backend
