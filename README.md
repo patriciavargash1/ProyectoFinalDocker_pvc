@@ -2,6 +2,8 @@
 
 Proyecto Dockerizado con backend Node.js + Express, base de datos MySQL y frontend React (Vite + Nginx).
 
+Repositorio original: https://github.com/patriciavargash1/ProyectoFinalDocker_pvc.git
+
 ## Estructura del proyecto
 
 - `backend/` - API Node.js con Express, acceso a MySQL y rutas REST.
@@ -30,10 +32,16 @@ Asegúrate de que `.env` existe en la raíz del proyecto antes de iniciar los se
 
 ## Uso con Docker Compose
 
+### Clonar el proyecto
+
+```bash
+git clone https://github.com/patriciavargash1/ProyectoFinalDocker_pvc.git
+cd ProyectoFinalDocker_pvc
+```
+
 ### Levantar los servicios
 
 ```bash
-cd F:\ProyectoDocker\ProyectoFinalDocker
 docker compose up -d
 ```
 
@@ -42,6 +50,11 @@ Esto iniciará:
 - MySQL en `3306`
 - Backend en `4000`
 - Frontend en `3000`
+
+### Funcionamiento de la aplicación en el navegador: 
+
+La aplicación de CV estará disponible en:
+`http://localhost:3000`
 
 ### Recargar la base de datos
 
@@ -78,7 +91,8 @@ npm install
 npm run dev
 ```
 
-El frontend quedará disponible en el puerto que muestre Vite, normalmente `http://localhost:5173`.
+El frontend quedará disponible en el puerto que muestre Vite, normalmente
+`http://localhost:5173`.
 
 ## Notas de Docker Hub
 
@@ -92,7 +106,6 @@ Si no existen o quieres usar las versiones locales, reemplaza los bloques `image
 ## Endpoints principales
 
 - `GET /api/personas`
-- `GET /api/personas/:id`
 - `GET /api/formacion`
 - `GET /api/formacion/:id`
 
